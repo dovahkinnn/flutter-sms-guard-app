@@ -1,8 +1,8 @@
 # sms_guard
 
-![Anasayfa Ekran Görüntüsü](asset\main.png)
-![Spam Ekran Görüntüsü](asset\junk.png)
-![İletişim Ekran Görüntüsü](asset\chat.png)
+![Anasayfa Ekran Görüntüsü](https://github.com/dovahkinnn/sms-guard/blob/main/asset/chat.png)
+![Spam Ekran Görüntüsü](https://github.com/dovahkinnn/sms-guard/blob/main/asset\junk.png)
+![İletişim Ekran Görüntüsü](https://github.com/dovahkinnn/sms-guard/blob/main/asset\chat.png)
 
 
 
