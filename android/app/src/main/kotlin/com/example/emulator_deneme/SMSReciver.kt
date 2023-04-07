@@ -152,7 +152,7 @@ class SMSReciver( private val eventSink: EventChannel.EventSink? ) : BroadcastRe
         )
         channel.lockscreenVisibility = Notification.VISIBILITY_PUBLIC
         val builder = NotificationCompat.Builder(context, "1")
-            .setSmallIcon(android.R.drawable.ic_dialog_email)
+            .setSmallIcon(R.drawable.ic_baseline_sms_24)
             .setContentTitle(number.toString())
             .setContentText(message.toString())
             .setContentIntent(pendingIntent)

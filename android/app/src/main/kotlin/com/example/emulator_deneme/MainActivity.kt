@@ -15,6 +15,8 @@ import io.flutter.embedding.android.FlutterActivity
 import io.flutter.embedding.engine.FlutterEngine
 import io.flutter.plugin.common.EventChannel
 import io.flutter.plugin.common.MethodChannel
+import org.tensorflow.lite.task.core.BaseOptions
+import org.tensorflow.lite.task.text.nlclassifier.NLClassifier
 
 
 class MainActivity: FlutterActivity() {
@@ -39,6 +41,26 @@ class MainActivity: FlutterActivity() {
                 val message = data?.get("body") as? String
                 saveinbox(this, address, message)
                 result.success("mesaj kutusuna kaydeddildi")
+
+            }
+            if (call.method == "nlClassifier") {
+                val data = call.arguments as?  String
+
+                    val options = NLClassifier.NLClassifierOptions
+                        .builder()
+                        .setBaseOptions(BaseOptions.builder().setNumThreads(4).build())
+                        .build()
+                    val bertClassifier = NLClassifier.createFromFileAndOptions(
+                        context,
+                        "model (2).tflite",
+                        options
+                    )
+                    val classifier = bertClassifier.classify(data)
+
+                    bertClassifier.close()
+                    println(classifier)
+                    result.success(classifier)
+
 
             }
    

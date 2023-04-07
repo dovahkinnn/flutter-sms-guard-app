@@ -29,47 +29,47 @@ environment:
 # the latest version available on pub.dev. To see which dependencies have newer
 # versions available, run `flutter pub outdated`.
 dependencies:
+  
+  bloc: ^8.1.1
+  flutter_bloc: ^8.1.2
+  equatable: ^2.0.5
 
-  cupertino_icons: ^1.0.2
-  flutter:
-    sdk: flutter
-
-  get: ^4.6.5
-  flutter_chat_bubble: ^2.0.2
-  auto_size_text_field: ^2.2.1
-  permission_handler: ^10.2.0
+  intl: null
   sqflite: ^2.2.3
-  sms_advanced: ^1.0.1
-  contacts_service: ^0.6.3
-  intl:
-  searchable_listview:
-  flutter_linkify: ^5.0.2
-  url_launcher: 
 
- 
 
   
-
-  # camera: 
+  flutter_chat_bubble: ^2.0.2
+  flutter_linkify: ^5.0.2
+  permission_handler: ^10.2.0
+  url_launcher: null
+  auto_size_text_field: ^2.2.1
+  autocomplete_textfield: ^2.0.1
+ 
+ 
+ 
+  
 
   telephony:
     git:
       url: https://github.com/definev/Telephony.git
       ref: develop
-  bloc: ^8.1.1
-  flutter_bloc: ^8.1.2
+  sms_advanced: ^1.0.1
+  fast_contacts: ^3.0.3
+
+  cupertino_icons: ^1.0.2
+  flutter:
+    sdk: flutter
 
 
 dev_dependencies:
-  flutter_lints: ^2.0.0
   flutter_launcher_icons: "^0.12.0"
+  flutter_lints: ^2.0.0
   flutter_test:
     sdk: flutter
 flutter_icons:
   android: true
   image_path: "asset/logo.jpeg"
-
- 
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -83,8 +83,6 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   # assets:
   #   - asset/
-
-    
   #   - images/a_dot_ham.jpeg
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
